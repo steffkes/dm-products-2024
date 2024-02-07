@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:22.12.3.5-alpine
+    # clickhouse-client --host wgo1pwi115.eu-central-1.aws.clickhouse.cloud --secure --port 9440 --password UjWsQELupSFp
+    working_dir: /app
+    volumes:
+      - ./:/app
+
